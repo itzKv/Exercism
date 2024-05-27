@@ -10,27 +10,27 @@ class RnaTranscriptionTests: XCTestCase {
   }
 
   func testRnaComplementOfCytosineIsGuanine() throws {
-    try XCTSkipIf(false && !runAll)  // change true to false to run this test
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(toRna("C"), "G")
   }
 
   func testRnaComplementOfGuanineIsCytosine() throws {
-    try XCTSkipIf(false && !runAll)  // change true to false to run this test
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(toRna("G"), "C")
   }
 
   func testRnaComplementOfThymineIsAdenine() throws {
-    try XCTSkipIf(false && !runAll)  // change true to false to run this test
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(toRna("T"), "A")
   }
 
   func testRnaComplementOfAdenineIsUracil() throws {
-    try XCTSkipIf(false && !runAll)  // change true to false to run this test
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(toRna("A"), "U")
   }
 
   func testRnaComplement() throws {
-    try XCTSkipIf(false && !runAll)  // change true to false to run this test
+    try XCTSkipIf(true && !runAll)  // change true to false to run this test
     XCTAssertEqual(toRna("ACGTGGTCTTAA"), "UGCACCAGAAUU")
   }
 }
